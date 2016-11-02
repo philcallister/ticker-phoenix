@@ -23,8 +23,12 @@ defmodule TickerPhoenix.Listener do
   end
 
   def handle_cast({:notify, quotes}, state) do
-    Logger.info("Listener => Quotes: #{inspect(quotes)}")
+    Enum.each(quotes, fn(q) -> notify_subscribers(q) end)
     {:noreply, state}
+  end
+
+  defp notify_subscribers(quote) do
+    TickerPhoenix.Endpoint.broadcast!("symbol:#{quote.t}", "quote", quote)
   end
 
 end

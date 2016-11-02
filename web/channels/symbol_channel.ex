@@ -1,6 +1,6 @@
 require Logger
 
-defmodule SocketBroadcast.SymbolChannel do
+defmodule TickerPhoenix.SymbolChannel do
   @moduledoc """
   The symbol channel updates clients with a symbol's quote info
   """
