@@ -19,4 +19,4 @@
   "poison": {:hex, :poison, "2.2.0", "4763b69a8a77bd77d26f477d196428b741261a761257ff1cf92753a0d4d24a63", [:mix], []},
   "ranch": {:hex, :ranch, "1.2.1", "a6fb992c10f2187b46ffd17ce398ddf8a54f691b81768f9ef5f461ea7e28c762", [:make], []},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.1", "28a4d65b7f59893bc2c7de786dec1e1555bd742d336043fe644ae956c3497fbe", [:make, :rebar], []},
-  "ticker": {:git, "https://github.com/philcallister/ticker.git", "78bedd37dcf2b46f5b9ea7434d551adf161dc0bc", []}}
+  "ticker": {:git, "https://github.com/philcallister/ticker.git", "797c8014dce77b65557726eff6abd22bbea546f6", []}}
