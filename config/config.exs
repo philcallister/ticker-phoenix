@@ -20,9 +20,9 @@ config :logger, :console,
 
 
 config :ticker,
-  processor: Ticker.Quote.Processor.HTTPoison,
+  frequency: 5_000,
+  processor: Ticker.Quote.Processor.Simulate,
   symbols: ["TSLA", "GOOG", "AAPL", "TWTR", "FB", "MMM", "GLD", "VOO"],
-  frequency: 10_000,
   url: "http://finance.google.com/finance/info?client=ig&q=NASDAQ%3A",
   notify_module: TickerPhoenix.Listener,
   notify_fn: :notify
