@@ -2,7 +2,8 @@ defmodule TickerPhoenix.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  channel "symbol:*", TickerPhoenix.SymbolChannel
+  channel "quote:symbol:*", TickerPhoenix.SymbolChannel
+  channel "frame:symbol:*", TickerPhoenix.SymbolChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

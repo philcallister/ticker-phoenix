@@ -24,8 +24,8 @@ config :ticker,
   processor: Ticker.Quote.Processor.Simulate,
   symbols: ["TSLA", "GOOG", "AAPL", "TWTR", "FB", "MMM", "GLD", "VOO"],
   url: "http://finance.google.com/finance/info?client=ig&q=NASDAQ%3A",
-  notify_module: TickerPhoenix.Listener,
-  notify_fn: :notify
+  quote_notify: [notify_module: TickerPhoenix.Listener, notify_fn: :notify_quotes],
+  frame_notify: [notify_module: TickerPhoenix.Listener, notify_fn: :notify_frame]
 
 
 # Import environment specific config. This must remain at the bottom
