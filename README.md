@@ -3,7 +3,7 @@
 **ticker-phoenix** is an example Elixir Phoenix app which provides an API for pulling stock quotes from the (defunct but still available) Google Finance API by using the [ticker-elixir](https://github.com/philcallister/ticker-elixir) Elixir OTP app. Clients can subsribe to Phoenix Channels with stock ticker symbols and be periodically notified of updates.
 
 To see the **ticker-phoenix** app in action, head over to
-- [ticker-elixir](https://github.com/philcallister/ticker-elixr) Elixir OTP app
+- [ticker-elixir](https://github.com/philcallister/ticker-elixir) Elixir OTP app
 - [ticker-react] (https://github.com/philcallister/ticker-react) React app
 
 ##### Example screenshot of the three applications being used together
