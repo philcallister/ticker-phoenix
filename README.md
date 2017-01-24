@@ -16,6 +16,8 @@ The sample was developed using the following
 - Elixir 1.3.4
 - OS X El Capitan (10.11)
 
+**Note:** Pull the **elixir_1.4** branch to use Elixir 1.4. This branch also includes an update to use the Elixir 1.4 **Registry** in place of **gproc** :+1:
+
 ## Setup
 
 Clone Repo
