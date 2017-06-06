@@ -37,7 +37,7 @@ defmodule TickerPhoenix.Listener do
   end
 
   defp notify_of_quote(quote) do
-    TickerPhoenix.Endpoint.broadcast!("quote:symbol:#{quote.t}", "quote", quote)
+    TickerPhoenix.Endpoint.broadcast!("quote:symbol:#{quote.symbol}", "quote", quote)
   end
 
   defp notify_of_frame(frame) do
