@@ -24,7 +24,7 @@ config :ticker,
   processor: Ticker.Quote.Processor.Simulate,
   historical: true,
   symbols: ["TSLA", "GOOG", "AAPL", "TWTR", "FB", "MMM", "GLD", "VOO"],
-  url: "http://finance.google.com/finance/info?client=ig&q=NASDAQ%3A",
+  url: "https://api.iextrading.com/1.0/tops?symbols=",
   quote_notify: [notify_module: TickerPhoenix.Listener, notify_fn: :notify_quotes],
   frame_notify: [notify_module: TickerPhoenix.Listener, notify_fn: :notify_frame]
 
