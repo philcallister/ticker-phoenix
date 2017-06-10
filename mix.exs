@@ -35,7 +35,7 @@ defmodule TickerPhoenix.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:corsica, "~> 0.4"},
-     {:ticker, git: "https://github.com/philcallister/ticker-elixir.git", branch: "elixir_1.4"},
+     {:ticker, git: "https://github.com/philcallister/ticker-elixir.git", branch: "elixir_1.4_iex"},
      {:poison, "~> 3.1", override: true}
     ]
   end
