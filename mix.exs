@@ -4,7 +4,7 @@ defmodule TickerPhoenix.Mixfile do
   def project do
     [app: :ticker_phoenix,
      version: "0.0.1",
-     elixir: "~> 1.4",
+     elixir: "~> 1.8",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
@@ -34,8 +34,9 @@ defmodule TickerPhoenix.Mixfile do
      {:phoenix_pubsub, "~> 1.0"},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:corsica, "~> 0.4"},
-     {:ticker, git: "https://github.com/philcallister/ticker-elixir.git", branch: "elixir_1.4_iex"},
+     {:plug_cowboy, "~> 1.0"},
+     {:corsica, "~> 1.1.2"},
+     {:ticker, git: "https://github.com/philcallister/ticker-elixir.git", branch: "elixir_1.8_iex"},
      {:poison, "~> 3.1", override: true}
     ]
   end
