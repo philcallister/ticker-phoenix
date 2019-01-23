@@ -4,7 +4,7 @@
 
 To see the **ticker-phoenix** app in action, head over to
 - [ticker-elixir](https://github.com/philcallister/ticker-elixir) Elixir OTP app
-- [ticker-react] (https://github.com/philcallister/ticker-react) React app
+- [ticker-react](https://github.com/philcallister/ticker-react) React app
 
 ##### Example screenshot of the three applications being used together
 ![Stock Ticker](/screen-shot.gif?raw=true "Stock Ticker Example")
